@@ -11,4 +11,5 @@ devtools::install_github("combiz/scFlow")
 usethis::create_github_token()
 usethis::edit_r_environ()
 将产生的GITHUB_PAT="*********" 添加到 ~/.Renviron
+usethis::edit_r_environ()
 重启R
