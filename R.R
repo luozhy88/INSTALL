@@ -18,3 +18,6 @@ remotes::install_github("satijalab/seurat-wrappers", "seurat5", quiet = TRUE)
 remotes::install_github("stuart-lab/signac", "seurat5", quiet = TRUE)
 
 remotes::install_github("bnprks/BPCells", quiet = TRUE)
+
+
+conda install -c conda-forge r-mailr
