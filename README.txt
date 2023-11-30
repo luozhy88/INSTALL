@@ -13,3 +13,5 @@ usethis::edit_r_environ()
 将产生的GITHUB_PAT="*********" 添加到 ~/.Renviron
 usethis::edit_r_environ()
 重启R
+
+https://www.wandoujia.com/apps/6860656/history_v19144  #企业微信版本号：v4.0.3
