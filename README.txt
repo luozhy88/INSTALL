@@ -18,3 +18,5 @@ https://www.wandoujia.com/apps/6860656/history_v19144  #企业微信版本号：
 
 #AI
 https://github.com/yangjian102621/chatgpt-plus
+https://www.perplexity.ai/
+https://consensus.app/search/
