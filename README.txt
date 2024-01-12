@@ -20,3 +20,7 @@ https://www.wandoujia.com/apps/6860656/history_v19144  #企业微信版本号：
 https://github.com/yangjian102621/chatgpt-plus
 https://www.perplexity.ai/
 https://consensus.app/search/
+
+# halla
+https://github.com/biobakery/halla
+python setup.py develop
