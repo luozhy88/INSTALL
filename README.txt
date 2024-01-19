@@ -6,6 +6,17 @@ git 不输入密码，ssh 配置方式https://coderwall.com/p/_plhoa/no-password
 https://github.com/ghostxu97/clash-for-linux
 
 
+
+## github 重置IP
+  sudo sed -i '$a\140.82.112.3 github.com' /etc/hosts
+### Linux
+  sudo /etc/init.d/networking restart
+### Mac
+  1.关闭网络接口：sudo ifconfig en0 down
+  2.打开网络接口：sudo ifconfig en0 up
+
+
+
 ## github API 提高速度
 devtools::install_github("combiz/scFlow")
 usethis::create_github_token()
