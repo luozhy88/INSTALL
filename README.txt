@@ -39,3 +39,12 @@ python setup.py develop
 
 #token
 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
+
+# Copilot
+Upgrade RStudio Server to RStudio 2023.09.0+463
+Enable GitHub Copilot integration by adding copilot-enabled=1 to the /etc/rstudio/rsession.conf
+Go to Tools / Global Options... / Copilot and tick Enable GitHub Copilot
+Allow GitHub Copilot agen installation if necessary
+Click the "Sign In" button
+
+
