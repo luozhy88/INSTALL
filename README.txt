@@ -40,11 +40,14 @@ python setup.py develop
 #token
 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
 
-# Copilot
-Upgrade RStudio Server to RStudio 2023.09.0+463
-Enable GitHub Copilot integration by adding copilot-enabled=1 to the /etc/rstudio/rsession.conf
-Go to Tools / Global Options... / Copilot and tick Enable GitHub Copilot
-Allow GitHub Copilot agen installation if necessary
-Click the "Sign In" button
+# Copilot 服务器激活方法
+  1 Upgrade RStudio Server to RStudio 2023.09.0+463
+    Enable GitHub Copilot integration by adding copilot-enabled=1 to the /etc/rstudio/rsession.conf
+  2 将终端中进行翻墙成功后，加载rstudio,再进行登录
+  3 Go to Tools / Global Options... / Copilot and tick Enable GitHub Copilot
+    Allow GitHub Copilot agen installation if necessary
+    Click the "Sign In" button
+  4 在mac本地进行输入验证码
+  5 rstudio-server网页版本打开后发下激活成功
 
 
