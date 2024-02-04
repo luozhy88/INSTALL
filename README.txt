@@ -50,4 +50,7 @@ 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
   4 在mac本地进行输入验证码
   5 rstudio-server网页版本打开后发下激活成功
 
+# Stirling-PDF
+https://github.com/Stirling-Tools/Stirling-PDF
+
 
