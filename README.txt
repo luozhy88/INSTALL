@@ -53,4 +53,6 @@ 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
 # Stirling-PDF
 https://github.com/Stirling-Tools/Stirling-PDF
 
+# MAC 重置DNS
+sudo killall -HUP mDNSResponder
 
