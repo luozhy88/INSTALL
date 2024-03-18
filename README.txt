@@ -56,3 +56,10 @@ https://github.com/Stirling-Tools/Stirling-PDF
 # MAC 重置DNS
 sudo killall -HUP mDNSResponder
 
+# R install  on CentOS 8
+sudo dnf config-manager --set-enabled PowerTools
+sudo yum install R
+sudo yum install make gcc gcc-c++ libcurl-devel libxml2-devel openssl-devel texlive-*
+
+
+
