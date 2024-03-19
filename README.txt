@@ -56,10 +56,12 @@ https://github.com/Stirling-Tools/Stirling-PDF
 # MAC 重置DNS
 sudo killall -HUP mDNSResponder
 
-# R install  on CentOS 8
+# Rstudio-server  install  on CentOS 8
 sudo dnf config-manager --set-enabled PowerTools
 sudo yum install R
 sudo yum install make gcc gcc-c++ libcurl-devel libxml2-devel openssl-devel texlive-*
 
-
+dnf install compat-openssl10.x86_64
+wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-2023.12.1-402-x86_64.rpm
+sudo yum install rstudio-server-rhel-2023.12.1-402-x86_64.rpm
 
