@@ -65,3 +65,5 @@ dnf install compat-openssl10.x86_64
 wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-2023.12.1-402-x86_64.rpm
 sudo yum install rstudio-server-rhel-2023.12.1-402-x86_64.rpm
 
+# thinlinc 安装方法
+https://www.cendio.com/thinlinc/docs/install/
