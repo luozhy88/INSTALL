@@ -67,3 +67,6 @@ sudo yum install rstudio-server-rhel-2023.12.1-402-x86_64.rpm
 
 # thinlinc 安装方法
 https://www.cendio.com/thinlinc/docs/install/
+
+sudo vim /etc/rstudio/rsession.conf # copilot-enabled=1
+sudo systemctl restart rstudio-server
