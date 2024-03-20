@@ -71,3 +71,21 @@ https://www.cendio.com/thinlinc/docs/install/
 # rstudio的copilot
 sudo vim /etc/rstudio/rsession.conf # copilot-enabled=1
 sudo systemctl restart rstudio-server
+
+# gitlab 安装
+  docker run --detach \
+      --hostname gitlab.example.com \
+      --env GITLAB_OMNIBUS_CONFIG="external_url 'http://192.168.35.202:8929'; gitlab_rails['gitlab_shell_ssh_port'] = 2289;" \
+      --publish 8929:8929 --publish 2289:22 \
+      --name gitlab \
+      --restart always \
+      --volume $GITLAB_HOME/config:/etc/gitlab \
+      --volume $GITLAB_HOME/logs:/var/log/gitlab \
+      --volume $GITLAB_HOME/data:/var/opt/gitlab \
+      --shm-size 256m \
+      gitlab/gitlab-ce:13.12.4-ce.0
+  
+  docker logs gitlab |grep password #寻找root的密码
+
+
+
