@@ -21,3 +21,7 @@ remotes::install_github("bnprks/BPCells", quiet = TRUE)
 
 
 conda install -c conda-forge r-mailr
+
+ sudo dnf install mpfr-devel
+
+mamba install r-cairo
