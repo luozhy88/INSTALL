@@ -25,3 +25,6 @@ conda install -c conda-forge r-mailr
  sudo dnf install mpfr-devel
 
 mamba install r-cairo
+
+install.packages("pak")
+pak::pak("tidyverse/readxl")
