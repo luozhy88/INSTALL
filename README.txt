@@ -56,7 +56,7 @@ https://github.com/Stirling-Tools/Stirling-PDF
 # MAC 重置DNS
 sudo killall -HUP mDNSResponder
 
-# Rstudio-server  install  on CentOS 8
+######################################################################## Rstudio-server  install  on CentOS 8
 sudo dnf config-manager --set-enabled PowerTools
 sudo yum install R
 sudo yum install make gcc gcc-c++ libcurl-devel libxml2-devel openssl-devel texlive-*
@@ -64,6 +64,16 @@ sudo yum install make gcc gcc-c++ libcurl-devel libxml2-devel openssl-devel texl
 dnf install compat-openssl10.x86_64
 wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-2023.12.1-402-x86_64.rpm
 sudo yum install rstudio-server-rhel-2023.12.1-402-x86_64.rpm
+#检查和配置防火墙
+sudo firewall-cmd --permanent --add-port=8787/tcp
+sudo firewall-cmd --reload
+sudo vi /etc/sysconfig/iptables# 添加 -A INPUT -p tcp -m state --state NEW -m tcp --dport 8787 -j ACCEPT
+sudo service iptables restart
+
+######################################################################## 
+
+
+
 
 # thinlinc 安装方法
 https://www.cendio.com/thinlinc/docs/install/
