@@ -15,7 +15,8 @@ https://github.com/ghostxu97/clash-for-linux
   1.关闭网络接口：sudo ifconfig en0 down
   2.打开网络接口：sudo ifconfig en0 up
 
-
+## docker 阿里云镜像安装
+https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
 
 ## github API 提高速度
 devtools::install_github("combiz/scFlow")
