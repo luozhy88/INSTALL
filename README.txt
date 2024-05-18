@@ -110,6 +110,10 @@ docker build -t 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7 . #-t后面
 docker push 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7  #推送到IP位置，如果没有权限，可以docker login
 
 # sublime 
+
+在Sublime Text中，按下 Ctrl + Shift + P（Windows/Linux）或 ⌘ + Shift + P（Mac）调出命令面板。
+输入 Preferences: Key Bindings 并选择它。
+
 [
 	{ "keys": ["ctrl+x"], "command": "cut" },
 	{ "keys": ["ctrl+c"], "command": "copy" },
@@ -117,5 +121,4 @@ docker push 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7  #推送到IP�
 		{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
 	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
 ]
-
 
