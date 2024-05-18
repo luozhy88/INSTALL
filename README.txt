@@ -109,4 +109,13 @@ add ./src /src # 工作目录的src到镜像位置/src
 docker build -t 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7 . #-t后面为创建新镜像的名称 .表示使用工作目录的Dockerfile
 docker push 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7  #推送到IP位置，如果没有权限，可以docker login
 
+# sublime 
+[
+	{ "keys": ["ctrl+x"], "command": "cut" },
+	{ "keys": ["ctrl+c"], "command": "copy" },
+	{ "keys": ["ctrl+v"], "command": "paste" },
+		{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
+]
+
 
