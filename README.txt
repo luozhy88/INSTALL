@@ -122,3 +122,18 @@ docker push 192.168.30.202:23099/luo/luo_test_anth_untarget:v2.7  #推送到IP�
 	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
 ]
 
+
+
+# metdna
+数据下载：http://metdna.zhulab.cn/metdna/help#3.1
+
+BiocManager::install("xcms")
+# Required packages
+required_pkgs <- c("dplyr","tidyr","readr", "stringr", "tibble", "purrr",
+                   "ggplot2", "igraph", "pbapply", "Rdisop", "randomForest", "pryr", "BiocParallel", "magrittr", "rmarkdown", "caret")
+BiocManager::install(required_pkgs)
+sudo yum install netcdf netcdf-devel
+BiocManager::install("mzR")
+BiocManager::install("MSnbase")
+BiocManager::install("xcms")
+
