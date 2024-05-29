@@ -5,6 +5,9 @@ git 不输入密码，ssh 配置方式https://coderwall.com/p/_plhoa/no-password
 ## clash-for-linux
 https://github.com/ghostxu97/clash-for-linux
 
+## pip
+pip install ms2query==1.2.4  --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
+pip install ./tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl #本地安装
 
 
 ## github 重置IP
