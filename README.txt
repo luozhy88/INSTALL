@@ -137,6 +137,11 @@ required_pkgs <- c("dplyr","tidyr","readr", "stringr", "tibble", "purrr",
 BiocManager::install(required_pkgs)
 sudo yum install netcdf netcdf-devel
 BiocManager::install("mzR")
+
+
+# 镜像下载
+https://seqera.io/containers/
+
 BiocManager::install("MSnbase")
 BiocManager::install("xcms")
 
