@@ -1,0 +1,12 @@
+version: '3'
+services:
+  code-server:
+    image: codercom/code-server:latest
+    container_name: code-server
+    ports:
+      - "8790:8080"
+    volumes:
+      - "D:\\data\\docker.vscode\\.config:/home/coder/.config"
+      - "D:\\data\\Project:/home/coder/project"
+    environment:
+      - DOCKER_USER=${USERNAME}
