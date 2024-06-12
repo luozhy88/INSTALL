@@ -1,0 +1,12 @@
+version: '3'
+services:
+  bioc:
+    #image: "ghcr.io/nbisweden/workshop-scrnaseq:2024-bioconductor-r4.3.0"
+    image: "bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0"
+    ports:
+      - "8789:8787"
+    environment:
+      - PASSWORD=bio
+    volumes:
+      - D:\data\docker.rstudio\R:/usr/local/lib/R/site-library
+      - D:\data\Project:/home/rstudio
