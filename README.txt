@@ -142,6 +142,9 @@ BiocManager::install("mzR")
 # 镜像下载
 https://seqera.io/containers/
 
+# docker镜像中安装东西
+那么你就docker exec -it xxxyyy bash
+
 BiocManager::install("MSnbase")
 BiocManager::install("xcms")
 
