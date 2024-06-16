@@ -148,3 +148,13 @@ https://seqera.io/containers/
 BiocManager::install("MSnbase")
 BiocManager::install("xcms")
 
+# docker 镜像server
+docker run -d --platform=linux/amd64  -p 8789:8787 --name bioc -e PASSWORD=bio -v /data/data1/zhiyu/data/image/docker/R:/home/zhiyu/R/x86_64-pc-linux-gnu-library/4.4 -v /data/data1:/mnt/ bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk
+docker commit bioc bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.$(date +%Y%m%d)
+docker save -o /data/data1/zhiyu/data/image/docker/bioconductor_docker.RELEASE_3_19-R-4.4.0.bk.$(date +%Y%m%d).tar bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.$(date +%Y%m%d)
+
+#docker rmi bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk
+#docker load -i bioconductor_docker.RELEASE_3_19-R-4.4.0.bk.20240616.tar
+
+
+
