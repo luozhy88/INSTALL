@@ -157,5 +157,23 @@ docker save -o /data/data1/zhiyu/data/image/docker/bioconductor_docker.RELEASE_3
 #docker rmi bioconductor/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk
 #docker load -i bioconductor_docker.RELEASE_3_19-R-4.4.0.bk.20240616.tar
 
+# proteowizard
+conda create -y -n proteowizard
+
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+mamba install proteowizard
+conda install -c bioconda openms
+wget https://github.com/compomics/ThermoRawFileParser/releases/download/v1.2.3/ThermoRawFileParser.zip
+unzip ThermoRawFileParser.zip
+
+sudo apt-get install mono-complete
+mono ThermoRawFileParser.exe -i /path/to/your/rawfiles/原始数据1.raw -o /path/to/output/ -f 1
+BiocManager::install("xcms")
+
+msconvert input_file.raw --filter "scanNumber [70,1050]"
+
 
 
