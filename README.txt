@@ -176,4 +176,6 @@ BiocManager::install("xcms")
 msconvert input_file.raw --filter "scanNumber [70,1050]"
 
 
+# 提高R包下载速度
+options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 
