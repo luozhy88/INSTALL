@@ -179,3 +179,8 @@ msconvert input_file.raw --filter "scanNumber [70,1050]"
 # 提高R包下载速度
 options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/"))
 
+office2016:
+ed2k://|file|cn_office_professional_plus_2016_x86_x64_dvd_6969182.iso|2588266496|27EEA4FE4BB13CD0ECCDFC24167F9E01|/
+激活工具：http://www.downcc.com/soft/290022.html
+密码：www.downcc.com
+
