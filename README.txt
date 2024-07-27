@@ -188,6 +188,7 @@ ed2k://|file|cn_office_professional_plus_2016_x86_x64_dvd_6969182.iso|2588266496
 
 
 # 安装LLaMA-Factory
+https://www.53ai.com/news/qianyanjishu/2015.html
 conda create -n fine-tuning python=3.10
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
