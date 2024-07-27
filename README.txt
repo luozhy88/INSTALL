@@ -185,3 +185,13 @@ ed2k://|file|cn_office_professional_plus_2016_x86_x64_dvd_6969182.iso|2588266496
 激活工具：http://www.downcc.com/soft/290022.html
 密码：www.downcc.com
 
+
+
+# 安装LLaMA-Factory
+conda create -n fine-tuning python=3.10
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e .[metrics] -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
