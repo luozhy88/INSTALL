@@ -193,5 +193,13 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e .[metrics] -i https://pypi.tuna.tsinghua.edu.cn/simple
 
+>>> import torch
+>>> torch.cuda.current_device()
+0
+>>> torch.cuda.get_device_name(0)
+'NVIDIA GeForce RTX 4090'
+>>> torch.__version__
+'2.4.0+cu121'
+>>> 
 
 
