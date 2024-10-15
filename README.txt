@@ -202,5 +202,17 @@ pip install -e .[metrics] -i https://pypi.tuna.tsinghua.edu.cn/simple
 >>> torch.__version__
 '2.4.0+cu121'
 >>> 
+# AnythingLLM
+ # Assuming that you want to store app data in a folder at /var/lib/anythingllm
+ # Pull in the latest image
+ # docker pull mintplexlabs/anythingllm:master
+ # export STORAGE_LOCATION="/var/lib/anythingllm" && \
+ # mkdir -p $STORAGE_LOCATION && \
+ # touch "$STORAGE_LOCATION/.env" && \
+ # docker run -d -p 3001:3001 --cap-add SYS_ADMIN  -v ${STORAGE_LOCATION}:/app/server/storage -v ${STORAGE_LOCATION}/.env:/app/server/.env -e STORAGE_DIR="/app/server/storage"  mintplexlabs/anythingllm:master
+ # visit http://localhost:3001 to use AnythingLLM!
+touch /home/zhiyu/data/software/anythingllm/.env
+docker run -p 3001:3001 --cap-add SYS_ADMIN  -v /home/zhiyu/data/software/anythingllm:/app/server/storage -v /home/zhiyu/data/software/anythingllm/.env:/app/server/.env -e STORAGE_DIR="/app/server/storage"  mintplexlabs/anythingllm:master
+
 
 
