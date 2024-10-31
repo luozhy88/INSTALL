@@ -214,5 +214,11 @@ pip install -e .[metrics] -i https://pypi.tuna.tsinghua.edu.cn/simple
 touch /home/zhiyu/data/software/anythingllm/.env
 docker run -p 3001:3001 --cap-add SYS_ADMIN  -v /home/zhiyu/data/software/anythingllm:/app/server/storage -v /home/zhiyu/data/software/anythingllm/.env:/app/server/.env -e STORAGE_DIR="/app/server/storage"  mintplexlabs/anythingllm:master
 
-
+# 没有密码rsync传输：
+#1 将ssh-copy-id 复制到远程服务器（拷贝到的服务器） ssh-keygen -t rsa 
+# ssh-copy-id  zhiyu@192.168.30.215  
+# 2 copy data
+TODAY=$(date +%Y%m%d)
+# echo "runing" > /mnt/zhiyu/bk.log/log.txt
+# rsync -avz  /mnt/zhiyu/data/mltest2/* zhiyu@192.168.55.99:/home/zhiyu/data/mltest2 > /mnt/zhiyu/bk.log/bk.log.mltest2${TODAY}.txt  
 
