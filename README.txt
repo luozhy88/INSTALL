@@ -222,3 +222,11 @@ TODAY=$(date +%Y%m%d)
 # echo "runing" > /mnt/zhiyu/bk.log/log.txt
 # rsync -avz  /mnt/zhiyu/data/mltest2/* zhiyu@192.168.55.99:/home/zhiyu/data/mltest2 > /mnt/zhiyu/bk.log/bk.log.mltest2${TODAY}.txt  
 
+# rshiny-server-cmd
+1 https://posit.co/download/shiny-server/
+2 conda install conda-forge::rshiny-server-cmd
+3 R安装一些包进去
+4 /etc/shiny-server/shiny-server.conf ：
+			app_idle_timeout 0;
+
+
