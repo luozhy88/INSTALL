@@ -230,3 +230,6 @@ TODAY=$(date +%Y%m%d)
 			app_idle_timeout 0;
 
 
+docker commit bio 192.16:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20241117
+docker push 192.168.2:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20241117
+
