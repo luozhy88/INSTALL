@@ -7,3 +7,9 @@
 3 docker inspect genostack-cromwell # 查看某个容器名称的网络情况
 
 4 sudo systemctl restart docker #重启docker
+
+ https://www.cnblogs.com/liugp/p/16328904.html  Docker四种网络模式（Bridge，Host，Container，None）
+
+docker inspect bridge
+
+com.docker.network.bridge.enable ip_masquerade true
