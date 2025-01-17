@@ -13,3 +13,25 @@
 docker inspect bridge
 
 com.docker.network.bridge.enable ip_masquerade true
+
+
+
+ cat /etc/docker/daemon.json：
+
+{
+    "insecure-registries":["dockerhub.genostack.com:8090","192.168.30.202:23099"],
+    "registry-mirrors": [
+        "https://dockerproxy.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://docker.nju.edu.cn",
+	"https://0dj0t5fb.mirror.aliyuncs.com",
+        "https://6kx4zyno.mirror.aliyuncs.com",
+        "https://registry.docker-cn.com",
+        "https://registry.docker-cn.com",
+        "https://pee6w651.mirror.aliyuncs.com",
+        "https://hub.geekery.cn/",
+        "https://ghcr.geekery.cn",
+        "https://hub.uuuadc.top/",
+        "https://docker.1panel.live",
+        "https://hub.rat.dev"]
+}
