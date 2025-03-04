@@ -233,3 +233,31 @@ TODAY=$(date +%Y%m%d)
 docker commit bio 192.16:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20241117
 docker push 192.168.2:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20241117
 
+# 外界镜像拉取方法 sudo vim /etc/docker/daemon.json
+{
+	"data-root": "/data1/docker.dir",
+	"registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "https://mirror.ccs.tencentyun.com",
+    "https://hub-mirror.c.163.com",
+        "https://dockerproxy.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://docker.nju.edu.cn",
+	"https://0dj0t5fb.mirror.aliyuncs.com",
+        "https://6kx4zyno.mirror.aliyuncs.com",
+        "https://registry.docker-cn.com",
+        "https://registry.docker-cn.com",
+        "https://pee6w651.mirror.aliyuncs.com",
+        "https://hub.geekery.cn/",
+        "https://ghcr.geekery.cn",
+        "https://hub.uuuadc.top/",
+        "https://docker.1panel.live",
+        "https://hub.rat.dev",
+    "https://mirror.baidubce.com",
+    "https://ccr.ccs.tencentyun.com"
+  ]
+}
+
+
+
+
