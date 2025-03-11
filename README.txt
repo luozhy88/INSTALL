@@ -258,6 +258,7 @@ docker push 192.168.2:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20
   ]
 }
 
-
-
+# crontab -e 启动
+service cron status
+sudo service cron start
 
