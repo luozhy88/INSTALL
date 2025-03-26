@@ -261,6 +261,23 @@ docker push 192.168.2:230/devpart/bioconductor_docker:RELEASE_3_19-R-4.4.0.bk.20
 }
 
 # crontab -e 启动
+
+# GPU容器内调用
+## 添加NVIDIA仓库
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.repo | sudo tee /etc/yum.repos.d/nvidia-docker.repo
+
+# 安装NVIDIA Container Toolkit：
+sudo yum clean expire-cache
+sudo yum install nvidia-container-toolkit -y
+
+sudo systemctl restart docker
+
+docker info | grep Runtimes
+
+
+
+
 service cron status
 sudo service cron start
 
