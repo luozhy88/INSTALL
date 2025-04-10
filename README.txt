@@ -277,7 +277,7 @@ docker info | grep Runtimes
 
 
 
-# github 备份
+# conda 环境备份
 conda activate py39
 conda env export | grep -v "^prefix: " > py39.yml
 conda env create -f py39.yml
