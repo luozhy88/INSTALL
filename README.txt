@@ -286,3 +286,8 @@ conda env create -f py39.yml
 service cron status
 sudo service cron start
 
+# 代谢raw文件转mzML
+conda create --name thermorawfileparser  thermorawfileparser
+ThermoRawFileParser -d /data1/zhiyu/data/software/nfcore/quantms/result4
+
+
