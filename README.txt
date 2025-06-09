@@ -14,6 +14,10 @@ options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")) # 设置
 options(repos = c(CRAN = "https://mirrors.ustc.edu.cn/CRAN/")) # 或者使用中科大镜像
 install.packages("rPref") # 然后重新安装
 
+# 重启R会话，然后重新加载
+.rs.restartR()  # 如果使用RStudio # 或者完全退出R并重新启动
+# 重启后直接加载
+library(Spectra)
 
 ## github 重置IP
   sudo sed -i '$a\140.82.112.3 github.com' /etc/hosts
