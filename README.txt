@@ -9,6 +9,11 @@ https://github.com/ghostxu97/clash-for-linux
 pip install ms2query==1.2.4  --index-url https://pypi.tuna.tsinghua.edu.cn/simple #指定镜像源安装
 pip install ./tensorflow-2.8.4-cp38-cp38-manylinux2010_x86_64.whl #本地安装
 
+# R安装更换源
+options(repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN/")) # 设置国内镜像源（清华大学）
+options(repos = c(CRAN = "https://mirrors.ustc.edu.cn/CRAN/")) # 或者使用中科大镜像
+install.packages("rPref") # 然后重新安装
+
 
 ## github 重置IP
   sudo sed -i '$a\140.82.112.3 github.com' /etc/hosts
