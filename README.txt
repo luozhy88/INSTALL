@@ -299,4 +299,10 @@ sudo service cron start
 conda create --name thermorawfileparser  thermorawfileparser
 ThermoRawFileParser -d /data1/zhiyu/data/software/nfcore/quantms/result4
 
+https://github.com/GlycanML/GlycanML  # 糖链结构的机器学习工具包，用于糖类分子的预测和分析
+https://github.com/CederGroupHub/chgnet  # 基于图神经网络的晶体材料性质预测模型
+https://github.com/M3RG-IITD/MatSciBERT  # 材料科学领域的预训练语言模型，用于材料文献理解
+https://github.com/lucidrains/alphafold3-pytorch  # AlphaFold 3的PyTorch复现实现，用于蛋白质结构预测
+
+
 
