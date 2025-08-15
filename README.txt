@@ -305,4 +305,14 @@ https://github.com/M3RG-IITD/MatSciBERT  # 材料科学领域的预训练语言�
 https://github.com/lucidrains/alphafold3-pytorch  # AlphaFold 3的PyTorch复现实现，用于蛋白质结构预测
 
 
+##安装claude-code
+conda install -c conda-forge nodejs
+npm install -g @anthropic-ai/claude-code@latest
+
+export ANTHROPIC_API_KEY="sk-89cc881907b24b1ab0f93e58ab3fc4" # 这里填入你在第二步获取的秘钥。 
+export ANTHROPIC_BASE_URL=https://cc.585dg.com
+# （只需执行一次，也可放入 ~/.zshrc / ~/.bashrc）
+bash <(curl -sSL http://cc.585dg.com/run_claude_proxy.sh) 
+
+
 
