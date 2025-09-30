@@ -314,5 +314,6 @@ export ANTHROPIC_BASE_URL=https://cc.585dg.com
 # （只需执行一次，也可放入 ~/.zshrc / ~/.bashrc）
 bash <(curl -sSL http://cc.585dg.com/run_claude_proxy.sh) 
 
-
+# 测试gemini-code
+curl -I -v https://generativelanguage.googleapis.com
 
