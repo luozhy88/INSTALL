@@ -317,3 +317,4 @@ bash <(curl -sSL http://cc.585dg.com/run_claude_proxy.sh)
 # 测试gemini-code
 curl -I -v https://generativelanguage.googleapis.com
 
+conda run -n realldock python --version
