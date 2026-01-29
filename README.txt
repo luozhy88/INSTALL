@@ -319,3 +319,17 @@ bash <(curl -sSL http://cc.585dg.com/run_claude_proxy.sh)
 curl -I -v https://generativelanguage.googleapis.com
 
 conda run -n realldock python --version
+
+
+# 配置app web上线
+conda install -c conda-forge r-shiny
+conda install -c conda-forge r-ggplot2 r-dplyr r-DT r-data.table
+conda install -c conda-forge r-stringi
+conda install rshiny-server-cmd
+
+## 检测是否能运行
+R -e "library(shiny); runApp(launch.browser=FALSE)"
+R -e "chooseCRANmirror(graphics = FALSE, ind = 21); install.packages(c('DT', 'shinythemes','openxlsx','uuid','shinyjs'))"
+
+conda activate shiny_env_app
+nohup rshiny-server-cmd --port=6001 /home/data1/zhiyu/data/software/duotang.create.input.db.web &
