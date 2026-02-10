@@ -333,3 +333,12 @@ R -e "chooseCRANmirror(graphics = FALSE, ind = 21); install.packages(c('DT', 'sh
 
 conda activate shiny_env_app
 nohup rshiny-server-cmd --port=6001 /home/data1/zhiyu/data/software/duotang.create.input.db.web &
+
+
+# linux 下centos conda环境自动登录
+vim ~/.bash_profile
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+
