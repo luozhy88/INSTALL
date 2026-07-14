@@ -1,0 +1,15 @@
+# 经常关注的账号清单
+# 规则：每行一个账号（@ 可写可不写），# 开头的行是注释，空行忽略
+# 程序运行时自动读取本文件，逐个抓取这些账号最近发表的推文
+@TrumpDailyPosts
+@fatwang2ai
+@tangming2005
+@EricTopol
+@elonmusk
+@imwsl90
+@dotey
+@ClaudeDevs
+@claudeai
+@jonathanstea
+@oncodaily
+@JunMaoMD

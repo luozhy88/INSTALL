@@ -1,0 +1,7 @@
+{
+  "smtp_host": "smtp.qq.com",
+  "smtp_port": 465,
+  "sender": "479321347@qq.com",
+  "auth_code": "utdwpcjamkewcbbd",
+  "recipient": "479321347@qq.com"
+}

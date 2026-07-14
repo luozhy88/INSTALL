@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kimi.xscraper</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/apple/kimi/twitter/03_auto_scrape.sh</string>
+    </array>
+
+    <!-- 登录（开机）后立即运行一次 -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- 每小时唤醒一次检查点；睡眠期间错过的会在唤醒后立即补跑。
+         脚本内部有 3 天节流，不到周期只花 1 秒跳过，不会开浏览器。 -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/apple/kimi/twitter</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/apple/kimi/twitter/logs/launchd.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/apple/kimi/twitter/logs/launchd.err.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/anaconda3/envs/kimi.code/bin</string>
+    </dict>
+</dict>
+</plist>
